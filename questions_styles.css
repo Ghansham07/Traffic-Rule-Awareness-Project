@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black; /* Set the background color to black */
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 650px; /* Set height of the header */
+    position: relative;
+}
+
+.hero-image {
+    background-image: url('hero_img2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.content-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-box {
+    background-color: #2e2e2e; /* Dark background for main box */
+    border: 2px solid rgb(7, 7, 7); /* Yellow border */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 45%;
+    transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
+}
+
+.main-box:hover {
+    background-color: #444; /* Change background color on hover */
+    transform: scale(1.05);
+    border-color: yellow;
+}
+
+.main-box:active {
+    background-color: #666; /* Darker background color on click */
+    transform: scale(0.95);
+    border-color: white;
+}
+
+.question-box {
+    background-color: #3e3e3e; /* Slightly lighter background for question box */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.answer-box {
+    background-color: #4e4e4e; /* Slightly lighter background for answer box */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer .footer-content .disclaimer {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 20px;
+    line-height: 1.4;
+    color: #bbb;
+}
+
+footer .about-me {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+footer .about-me .profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+footer .about-me p {
+    margin: 0;
+    font-size: 14px;
+}

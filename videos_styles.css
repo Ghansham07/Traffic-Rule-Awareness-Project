@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(85, 84, 84, 0.9); /* Set the background color to a dark shade */
+    color: white;
+}
+
+/* Header and Hero Image Styles */
+header {
+    width: 100%;
+}
+
+.hero-image {
+    background-image: url('hero_img2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Video and Animation Sections */
+.videos, .animations {
+    margin: 20px 0;
+}
+
+.video-container, .animation-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-item, .animation-item {
+    flex: 1 1 calc(33.333% - 20px); /* Three items per row */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow */
+    border-radius: 12px; /* Border radius for rounded corners */
+    overflow: hidden;
+    border: 2px solid black;
+    text-align: center;
+    background-color: #222; /* Slightly different background for items */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow change */
+}
+
+.video-item:hover, .animation-item:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Darker and more prominent shadow on hover */
+}
+
+.video-item iframe, .animation-item iframe {
+    width: 100%;
+    height: 200px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer .footer-content .disclaimer {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 20px;
+    line-height: 1.4;
+    color: #bbb;
+}
+
+footer .about-me {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+footer .about-me .profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+footer .about-me p {
+    margin: 0;
+    font-size: 14px;
+}

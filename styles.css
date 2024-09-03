@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0,0,0); /* Set the background color to black */
+    color: white;
+}
+
+header {
+    width: 100%;
+}
+
+.hero-image {
+    background-image: url('hero_img2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 20px;
+}
+
+.content-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.box {
+    background-color: #2a2a2a; /* Slightly lighter than black for better visibility */
+    color: white;
+    width: 30%;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s, border 0.3s;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid #444; /* Dark gray border */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.box i {
+    margin-bottom: 10px;
+    background-color: #e4c200;
+    color: #fff; /* Icon color */
+    padding: 20px;
+    border-radius: 50%; /* Circle shape */
+    margin-bottom: 10px;
+    font-size: 25px; /* Adjust size if needed */
+    transition: background-color 0.3s ease;
+}
+
+.box p {
+    margin: 0;
+}
+
+.box:hover {
+    background-color: #444; /* Change background color on hover */
+    transform: scale(1.05);
+    border-color: yellow;
+}
+
+.box:active {
+    background-color: #666; /* Darker background color on click */
+    transform: scale(0.95);
+    border-color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer .footer-content .disclaimer {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 20px;
+    line-height: 1.4;
+    color: #bbb;
+}
+
+footer .about-me {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+footer .about-me .profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+footer .about-me p {
+    margin: 0;
+    font-size: 14px;
+}
+
+

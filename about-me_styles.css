@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+header {
+    width: 100%;
+}
+
+.hero-image {
+    background-color: #000033;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 20px;
+    
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.profile {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    border-radius: 10px; /* Optional: Rounded corners for a softer look */
+    padding: 10px; /* Optional: Add some padding inside the box */
+    background-color: #fff; /* Optional: Background color to ensure the shadow is visible */
+}
+.profile:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-links a i {
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer .footer-content .disclaimer {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 20px;
+    line-height: 1.4;
+    color: #bbb;
+}
+
+footer .about-me {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+footer .about-me .profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+footer .about-me p {
+    margin: 0;
+    font-size: 14px;
+}
